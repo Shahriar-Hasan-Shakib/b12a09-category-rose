@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+.header {
+    @apply sticky top-0 left-0 w-full z-50 px-4 py-4 bg-white shadow-md;
+}
+
+.container {
+    @apply flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.logo h1 {
+    @apply text-2xl font-bold text-gray-800;
+}
+
+.nav {
+    @apply flex sm:gap-3 lg:gap-8 items-center;
+}
+
+.navLink {
+    @apply relative px-2 py-1 text-base font-medium text-gray-700 hover:text-blue-600 transition-colors;
+}
+
+.navLink.active {
+    @apply text-blue-600 font-semibold;
+}
+
+.navLink.active::after {
+    @apply w-full;
+}
+
+.navLink::after {
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all;
+    content: '';
+}
+
+.navLink:hover::after {
+    @apply w-full;
+}
+
+.menuBtn {
+    @apply hidden cursor-pointer text-2xl;
+}
+
+.menuIcon {
+    @apply block w-full h-0.5 bg-gray-800 transition-all;
+}
+
+.navBtn {
+    @apply px-4 py-1.5 bg-blue-600 text-center text-white rounded hover:bg-blue-700 w-full transition-colors;
+}
+
+.navBtn.active {
+    @apply bg-blue-700 ring-2 ring-offset-2 ring-blue-600;
+}
+
+.userMenu {
+    @apply relative text-black;
+}
+
+.avatar {
+    @apply w-10 h-10 rounded-full overflow-hidden border-2 border-blue-600 cursor-pointer ;
+}
+.avatar img {
+    @apply w-full h-full object-cover;
+}
+
+.userMenuDropdown {
+    @apply absolute top-12 right-0 bg-white shadow-lg rounded-lg p-3 min-w-max;
+}
+
+.userName {
+    @apply text-sm font-semibold text-gray-800;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav {
+        @apply fixed gap-2 top-16 left-0 flex-col w-3/5 h-full px-4 bg-white shadow-lg transform -translate-x-full opacity-50 transition-all;
+    }
+
+    .navOpen {
+        @apply translate-x-0 opacity-100;
+    }
+
+    .menuBtn {
+        @apply inline-block transition-transform duration-300;
+    }
+
+    .navLink {
+        @apply w-full text-lg border-b border-gray-200;
+    }
+}

@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+.card {
+    @apply rounded-lg transition-all duration-300;
+}
+
+.default {
+    @apply bg-white shadow-md hover:shadow-lg;
+}
+
+.outlined {
+    @apply border-2 border-gray-200 hover:border-blue-500;
+}
+
+.elevated {
+    @apply bg-white shadow-xl hover:shadow-2xl transform hover:-translate-y-1;
+}
