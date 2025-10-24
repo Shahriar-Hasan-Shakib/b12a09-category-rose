@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+.h1 { @apply text-white text-center text-xl -mb-2; }
+.container { @apply min-h-screen bg-gradient-to-br from-blue-950 via-sky-950 to-blue-950 flex items-center justify-center p-4 relative; }
+.card { @apply relative w-full max-w-md bg-gray-100/5 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/20 overflow-hidden; }
+.header { @apply p-8 text-center; }
+.headerTitle { @apply text-3xl font-bold text-white mb-2; }
+.headerText { @apply text-white/70; }
+.form { @apply px-8 pb-8 space-y-6; }
+.inputGroup { @apply relative; }
+.inputGroup+p { @apply mt-1 text-red-400 font-medium; }
+.label { @apply block text-white/80 text-sm font-medium mb-2; }
+.input { @apply w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300; }
+.passwordButton { @apply absolute right-3 top-1/2 transform -translate-y-1/2 text-white/60 hover:text-white transition-colors duration-200; }
+.checkbox { @apply rounded border-white/20 bg-white/10 text-purple-500 focus:ring-purple-500 focus:ring-2; }
+.checkboxLabel { @apply ml-2 text-white/80 text-sm; }
+.linkButton { @apply text-purple-300 hover:text-purple-200 text-sm font-medium transition-all duration-200; }
+.submitButton { @apply w-full bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center; }
+.submitIcon { @apply ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200; }
+.socialContainer { @apply px-8 pt-6 pb-4 grid grid-cols-2 gap-3 justify-center; }
+.socialButton { @apply flex items-center justify-center gap-2 flex-1 bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-medium py-2.5 px-3 rounded-lg border border-white/20 hover:border-white/40 transition-all duration-300; }
+.socialIcon { @apply w-4 h-4 sm:w-5 sm:h-5; }
+.divider { @apply mx-8 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent; }
+.footerText { @apply px-8 pb-8 text-center text-white/60 text-sm; }
+.footerButton { @apply ml-1 text-purple-300 hover:text-purple-200 font-medium transition-colors duration-200; }
+.icon { @apply absolute inline-block left-3 top-1/2 transform -translate-y-1/2 text-white/60 w-5 h-5; }
