@@ -1,0 +1,98 @@
+[
+    {
+        "serviceId": 1,
+        "serviceName": "Winter Coat Fitting for Cats",
+        "providerName": "PawCare Studio",
+        "providerEmail": "info@pawcare.com",
+        "price": 25,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Custom coat fitting and warm outfit options to keep your cat comfortable in the cold. Our expert staff will help you find the perfect winter jacket, sweater, or coat that fits your cat’s breed and size. We offer a wide range of styles from waterproof parkas to cozy knit sweaters.",
+        "image": "https://images.pexels.com/photos/20400765/pexels-photo-20400765.jpeg",
+        "category": "Clothing"
+    },
+    {
+        "serviceId": 2,
+        "serviceName": "Winter Grooming & Paw Treatment for Rabbits",
+        "providerName": "CozyPets Grooming",
+        "providerEmail": "hello@cozypets.com",
+        "price": 30,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo. Protect your rabbit’s paws from cold weather damage with our specialized treatment that includes nail trimming, paw pad moisturizing, and gentle cleaning with all-natural products.",
+        "image": "https://images.pexels.com/photos/6357160/pexels-photo-6357160.jpeg",
+        "category": "Grooming"
+    },
+    {
+        "serviceId": 3,
+        "serviceName": "Indoor Guinea Pig Playground Session",
+        "providerName": "WarmPaws Activity Center",
+        "providerEmail": "play@warmpaws.com",
+        "price": 20,
+        "rating": 4.7,
+        "slotsAvailable": 8,
+        "description": "Heated indoor play area for guinea pigs to exercise safely during cold weather. Your guinea pigs can run, play, and socialize in our climate-controlled facility with soft flooring, toys, and supervised activities. Perfect for keeping your guinea pig active when it's too cold outside.",
+        "image": "https://images.pexels.com/photos/14070138/pexels-photo-14070138.jpeg",
+        "category": "Activities"
+    },
+    {
+        "serviceId": 4,
+        "serviceName": "Winter Nutrition Consultation for Cats",
+        "providerName": "Dr. Sarah Williams DVM",
+        "providerEmail": "nutrition@petwellness.com",
+        "price": 45,
+        "rating": 5.0,
+        "slotsAvailable": 2,
+        "description": "Expert veterinary advice on winter diet adjustments for optimal cat health. Learn how to adjust your cat's calorie intake during winter months, discover the best supplements for joint health in cold weather, and get personalized meal plans for your cat's specific needs.",
+        "image": "https://images.pexels.com/photos/27130348/pexels-photo-27130348.jpeg",
+        "category": "Health"
+    },
+    {
+        "serviceId": 5,
+        "serviceName": "Heated Rabbit Boarding",
+        "providerName": "Snuggle Inn Pet Resort",
+        "providerEmail": "bookings@snuggleinn.com",
+        "price": 55,
+        "rating": 4.9,
+        "slotsAvailable": 5,
+        "description": "Cozy, temperature-controlled boarding with blankets and warm bedding. Your rabbit will enjoy private suites with heated floors, plush bedding, regular outdoor breaks in our protected yard, and 24/7 monitoring. We provide home-like comfort while you're away.",
+        "image": "https://images.pexels.com/photos/18957429/pexels-photo-18957429.jpeg",
+        "category": "Boarding"
+    },
+    {
+        "serviceId": 6,
+        "serviceName": "Winter Safety Workshop for Cats",
+        "providerName": "Pet Guardian Academy",
+        "providerEmail": "workshops@petguardian.com",
+        "price": 15,
+        "rating": 4.6,
+        "slotsAvailable": 12,
+        "description": "Learn essential cold weather safety tips and emergency preparedness for your cats. Topics include recognizing hypothermia symptoms, creating a winter emergency kit, safe outdoor exercise guidelines, and protecting paws from ice and salt.",
+        "image": "https://images.pexels.com/photos/6816839/pexels-photo-6816839.jpeg",
+        "category": "Education"
+    },
+    {
+        "serviceId": 7,
+        "serviceName": "Pet Winter Wellness Check",
+        "providerName": "Frosty Paws Veterinary Clinic",
+        "providerEmail": "care@frostypawsvet.com",
+        "price": 40,
+        "rating": 4.9,
+        "slotsAvailable": 6,
+        "description": "Comprehensive health examination focused on winter-specific concerns like dry skin, joint stiffness, and respiratory issues. Our vets will check for seasonal allergies, assess coat condition, and provide preventive care recommendations for your pet.",
+        "image": "https://images.pexels.com/photos/7470754/pexels-photo-7470754.jpeg",
+        "category": "Health"
+    },
+    {
+        "serviceId": 8,
+        "serviceName": "Cat Winter Enrichment Program",
+        "providerName": "Whiskers & Warmth",
+        "providerEmail": "meow@whiskersandwarmth.com",
+        "price": 28,
+        "rating": 4.8,
+        "slotsAvailable": 7,
+        "description": "Interactive play sessions and mental stimulation activities designed specifically for indoor pets during winter. Includes puzzle feeders, climbing structures, laser play, and cozy hideaways to keep your furry friend happy and active.",
+        "image": "https://images.pexels.com/photos/29806036/pexels-photo-29806036.jpeg",
+        "category": "Activities"
+    }
+]
