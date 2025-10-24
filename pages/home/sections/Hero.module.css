@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+.heroContainer {
+    @apply relative;
+}
+
+.slide {
+    @apply relative h-full;
+}
+
+.slideImage {
+    @apply w-full h-full object-cover;
+}
+
+.overlay {
+    @apply absolute inset-0 bg-black/40 flex items-center justify-center;
+}
+
+.content {
+    @apply text-center text-white px-4;
+}
+
+.title {
+    @apply text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg;
+}
+
+.subtitle {
+    @apply text-xl md:text-2xl mb-8 drop-shadow-md;
+}
+
+.button {
+    @apply bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg;
+}
