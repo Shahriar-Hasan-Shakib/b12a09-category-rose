@@ -1,0 +1,162 @@
+@import 'tailwindcss';
+
+.container {
+    @apply min-h-screen bg-gray-50 py-12 px-4;
+}
+
+.content {
+    @apply max-w-7xl mx-auto;
+}
+
+.header {
+    @apply text-center mb-12;
+}
+
+.title {
+    @apply text-4xl md:text-5xl font-bold text-gray-800 mb-4;
+}
+
+.subtitle {
+    @apply text-xl text-gray-600 max-w-2xl mx-auto;
+}
+
+.grid {
+    @apply grid md:grid-cols-2 gap-8;
+}
+
+/* Contact Form */
+.formCard {
+    @apply bg-white rounded-2xl shadow-xl p-8;
+}
+
+.formTitle {
+    @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.form {
+    @apply space-y-4;
+}
+
+.formGroup {
+    @apply space-y-2;
+}
+
+.label {
+    @apply block text-sm font-semibold text-gray-700;
+}
+
+.input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all;
+}
+
+.textarea {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none transition-all;
+}
+
+.submitButton {
+    @apply w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center gap-2;
+}
+
+/* Info Card */
+.infoCard {
+    @apply space-y-6;
+}
+
+.infoSection {
+    @apply bg-white rounded-2xl shadow-xl p-8;
+}
+
+.infoTitle {
+    @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.infoList {
+    @apply space-y-4;
+}
+
+.infoItem {
+    @apply flex items-start gap-4;
+}
+
+.infoIcon {
+    @apply text-2xl text-blue-600 mt-1 flex-shrink-0;
+}
+
+.infoContent {
+    @apply flex-1;
+}
+
+.infoLabel {
+    @apply text-sm font-semibold text-gray-500 mb-1;
+}
+
+.infoValue {
+    @apply text-gray-800 font-medium;
+}
+
+.infoLink {
+    @apply text-blue-600 hover:text-blue-700 font-medium;
+}
+
+/* Hours */
+.hoursSection {
+    @apply bg-white rounded-2xl shadow-xl p-8;
+}
+
+.hoursTitle {
+    @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.hoursList {
+    @apply space-y-3;
+}
+
+.hoursItem {
+    @apply flex justify-between items-center pb-3 border-b border-gray-200 last:border-0;
+}
+
+.day {
+    @apply font-semibold text-gray-700;
+}
+
+.time {
+    @apply text-gray-600;
+}
+
+/* Social Media */
+.socialSection {
+    @apply bg-linear-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 text-white;
+}
+
+.socialTitle {
+    @apply text-2xl font-bold mb-4;
+}
+
+.socialText {
+    @apply text-blue-100 mb-6;
+}
+
+.socialLinks {
+    @apply flex gap-4;
+}
+
+.socialLink {
+    @apply w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-200 text-xl;
+}
+
+/* Map Section */
+.mapSection {
+    @apply mt-8 bg-white rounded-2xl shadow-xl overflow-hidden;
+}
+
+.mapContainer {
+    @apply w-full h-96 bg-gray-200;
+}
+
+.mapContainer iframe {
+    border: 0;
+}
+
+.mapPlaceholder {
+    @apply w-full h-full flex items-center justify-center text-gray-500;
+}

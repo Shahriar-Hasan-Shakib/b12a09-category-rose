@@ -1,0 +1,192 @@
+@import 'tailwindcss';
+
+.container {
+    @apply min-h-screen bg-white;
+}
+
+/* Hero Section */
+.hero {
+    @apply bg-linear-to-r from-blue-600 to-indigo-600 text-white py-20 px-4;
+}
+
+.heroContent {
+    @apply max-w-4xl mx-auto text-center;
+}
+
+.heroTitle {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+}
+
+.heroSubtitle {
+    @apply text-xl text-blue-100 max-w-2xl mx-auto;
+}
+
+/* Story Section */
+.story {
+    @apply py-16 px-4 bg-gray-50;
+}
+
+.storyContent {
+    @apply max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center;
+}
+
+.storyImage {
+    @apply rounded-2xl shadow-2xl object-cover w-full h-96;
+}
+
+.storyText {
+    @apply space-y-4;
+}
+
+.sectionTitle {
+    @apply text-3xl font-bold text-gray-800 mb-4;
+}
+
+.sectionTitleCentered {
+    @apply text-3xl font-bold text-gray-800 mb-4 text-center;
+}
+
+.paragraph {
+    @apply text-gray-600 leading-relaxed;
+}
+
+/* Mission & Vision */
+.missionVision {
+    @apply py-16 px-4 bg-white;
+}
+
+.missionVisionContent {
+    @apply max-w-6xl mx-auto;
+}
+
+.mvGrid {
+    @apply grid md:grid-cols-2 gap-8 mt-8;
+}
+
+.mvCard {
+    @apply bg-linear-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border-l-4 border-blue-600;
+}
+
+.mvIcon {
+    @apply text-4xl text-blue-600 mb-4;
+}
+
+.mvTitle {
+    @apply text-2xl font-bold text-gray-800 mb-3;
+}
+
+.mvText {
+    @apply text-gray-600 leading-relaxed;
+}
+
+/* Stats Section */
+.stats {
+    @apply py-16 px-4 bg-linear-to-r from-blue-600 to-indigo-600;
+}
+
+.statsContent {
+    @apply max-w-6xl mx-auto;
+}
+
+.statsGrid {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white;
+}
+
+.statCard {
+    @apply space-y-2;
+}
+
+.statNumber {
+    @apply text-4xl md:text-5xl font-bold;
+}
+
+.statLabel {
+    @apply text-blue-100;
+}
+
+/* Values Section */
+.values {
+    @apply py-16 px-4 bg-gray-50;
+}
+
+.valuesContent {
+    @apply max-w-6xl mx-auto;
+}
+
+.valuesGrid {
+    @apply grid md:grid-cols-3 gap-8 mt-8;
+}
+
+.valueCard {
+    @apply bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center;
+}
+
+.valueIcon {
+    @apply text-5xl mb-4;
+}
+
+.valueTitle {
+    @apply text-xl font-bold text-gray-800 mb-2;
+}
+
+.valueText {
+    @apply text-gray-600;
+}
+
+/* Team Section */
+.team {
+    @apply py-16 px-4 bg-white;
+}
+
+.teamContent {
+    @apply max-w-6xl mx-auto;
+}
+
+.teamGrid {
+    @apply grid md:grid-cols-3 gap-8 mt-8;
+}
+
+.teamCard {
+    @apply bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2;
+}
+
+.teamImage {
+    @apply w-full h-64 object-cover;
+}
+
+.teamInfo {
+    @apply p-6 text-center;
+}
+
+.teamName {
+    @apply text-xl font-bold text-gray-800 mb-1;
+}
+
+.teamRole {
+    @apply text-blue-600 font-medium mb-3;
+}
+
+.teamBio {
+    @apply text-gray-600 text-sm;
+}
+
+/* CTA Section */
+.cta {
+    @apply py-16 px-4 bg-linear-to-r from-indigo-600 to-blue-600 text-white text-center;
+}
+
+.ctaContent {
+    @apply max-w-3xl mx-auto;
+}
+
+.ctaTitle {
+    @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+.ctaText {
+    @apply text-xl text-blue-100 mb-8;
+}
+
+.ctaButton {
+    @apply inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200;
+}
