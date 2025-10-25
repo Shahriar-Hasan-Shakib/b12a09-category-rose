@@ -5,7 +5,7 @@ import { AuthLocalContext } from './Auth';
 export function Submit() {
     const { isLogin, $touched } = useContext(AuthLocalContext)!
     const handleSubmit = () => {
-        $touched({ name: true, email: true, password: true });
+        $touched({ name: true, email: true, password: true, photoURL: true });
     }
     return (
         <button type="submit" className={s.submitButton} onClick={handleSubmit}>

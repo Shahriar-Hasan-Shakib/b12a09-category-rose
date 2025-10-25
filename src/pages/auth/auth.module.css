@@ -17,7 +17,7 @@
 .linkButton { @apply text-purple-300 hover:text-purple-200 text-sm font-medium transition-all duration-200; }
 .submitButton { @apply w-full bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center; }
 .submitIcon { @apply ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200; }
-.socialContainer { @apply px-8 pt-6 pb-4 grid grid-cols-2 gap-3 justify-center; }
+.socialContainer { @apply px-8 pt-6 pb-4 grid grid-cols-1 gap-3 justify-center; }
 .socialButton { @apply flex items-center justify-center gap-2 flex-1 bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-medium py-2.5 px-3 rounded-lg border border-white/20 hover:border-white/40 transition-all duration-300; }
 .socialIcon { @apply w-4 h-4 sm:w-5 sm:h-5; }
 .divider { @apply mx-8 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent; }

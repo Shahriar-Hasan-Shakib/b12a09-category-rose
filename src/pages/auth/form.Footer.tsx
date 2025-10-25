@@ -8,7 +8,7 @@ export function Footer() {
     const { isLogin, $IsLogin, $form, $touched, handleSocialLogin } = useContext(AuthLocalContext)!;
     const handleSwitch = () => {
         $form({ name: '', email: '', password: '', photoURL: '' });
-        $touched({ name: false, email: false, password: false });
+        $touched({ name: false, email: false, password: false, photoURL: false });
         $IsLogin(!isLogin);
     };
 
@@ -18,9 +18,9 @@ export function Footer() {
             <h1 className={s.h1}>Continue with</h1>
             <div className={`${s.socialContainer} text-7xl`}>
                 <button type="button" onClick={() => handleSocialLogin('google')} >   <GoogleIcon />   <span className="text-white">Google</span> </button>
-                <button type="button" onClick={() => handleSocialLogin('github')} >   <GitHubIcon />   <span>GitHub</span> </button>
+                {/* <button type="button" onClick={() => handleSocialLogin('github')} >   <GitHubIcon />   <span>GitHub</span> </button>
                 <button type="button" onClick={() => handleSocialLogin('facebook')} > <FacebookIcon /> <span>Facebook</span> </button>
-                <button type="button" onClick={() => handleSocialLogin('twitter')} >  <TwitterIcon />  <span>X</span> </button>
+                <button type="button" onClick={() => handleSocialLogin('twitter')} >  <TwitterIcon />  <span>X</span> </button> */}
             </div>
 
             {/* Divider */}

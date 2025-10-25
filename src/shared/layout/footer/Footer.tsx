@@ -57,7 +57,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Social Media */}
-                    <div className="space-y-4">
+                    <div className="space-y-4 ">
                         <h3 className={styles.columnTitle}>Connect With Us</h3>
                         <div className="flex space-x-4">
                             {socialLinks.map(social => {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, Link, useLoaderData, useParams } from 'react-router';
+import { useNavigate, Link, useLoaderData } from 'react-router';
 import { ServiceCard } from '@/shared/components/serviceCard/ServiceCard';
 import type { Service } from '@/shared/components/serviceCard/ServiceCard.types';
 import s from './PopularServices.module.css';
@@ -11,7 +11,7 @@ export function PopularServices() {
     const navigate = useNavigate();
     const data = useLoaderData() as Service[];
 
-    useEffect(() =>  setServices(data.slice(0, 6)), [data]);
+    useEffect(() => setServices(data.slice(0, 6)), [data]);
 
     const handleViewDetails = (serviceId: number) => {
         navigate(`/service/${serviceId}`);

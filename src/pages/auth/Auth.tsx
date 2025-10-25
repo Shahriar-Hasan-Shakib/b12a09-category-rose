@@ -8,6 +8,7 @@ import { Name } from './form.Name';
 import { RememberMe } from './form.RememberMe';
 import { Password } from './form.Password';
 import { Email } from './form.Email';
+import { PhotoURL } from './form.PhotoURL';
 import { Submit } from './form.Submit';
 import { Footer } from './form.Footer';
 import toast from 'react-hot-toast';
@@ -23,6 +24,7 @@ type TouchedFields = {
     name: boolean;
     email: boolean;
     password: boolean;
+    photoURL: boolean;
 };
 
 interface AuthContextType {
@@ -50,7 +52,7 @@ const validatePassword = (password: string): string => {
 export function Auth() {
     const [isLogin, $IsLogin] = useState(true);
     const [form, $form] = useState({ name: '', email: '', password: '', photoURL: '' });
-    const [touched, $touched] = useState({ name: false, email: false, password: false });
+    const [touched, $touched] = useState({ name: false, email: false, password: false, photoURL: false });
 
     const { signIn, signUp } = useAuth();
     const navigate = useNavigate();
@@ -122,6 +124,7 @@ export function Auth() {
                     <form onSubmit={handleSubmit} className={s.form}>
                         {!isLogin && <Name />}
                         <Email />
+                        {!isLogin && <PhotoURL />}
                         <Password />
                         {isLogin && <RememberMe />}
                         <Submit />

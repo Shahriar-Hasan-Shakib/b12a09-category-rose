@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router';
 import { useAuth } from '@/context/AuthContext';
 import type { Service } from '@/shared/components/serviceCard/ServiceCard.types';
@@ -17,7 +17,7 @@ export function ServiceDetails() {
         name: user?.displayName || '',
         email: user?.email || '',
     });
-        
+
     useEffect(() => {
         // Load service data
         fetch(SERVICES_JSON)

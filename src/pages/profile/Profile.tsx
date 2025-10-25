@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useAuth } from '@/context/AuthContext';
 import s from './Profile.module.css';
@@ -11,7 +11,6 @@ export function Profile() {
     const [isEditing, setIsEditing] = useState(false);
     const [displayName, setDisplayName] = useState(user?.displayName || '');
     const [photoURL, setPhotoURL] = useState(user?.photoURL || '');
-    const emailRef = useRef<HTMLInputElement>(null);
 
     const handleLogout = async () => {
         await logout();

@@ -96,13 +96,13 @@ export function email(email: string): string {
     }
 }
 
-export const password = (password: string):string => {
+export const password = (password: string): string => {
     switch (true) {
         case !password || password.trim() === '':
             return ("Password cannot be empty");
 
-        case password.length < 8:
-            return ("Password must be at least 8 characters long");
+        case password.length < 6:
+            return ("Password must be at least 6 characters long");
 
         case password.length > 128:
             return ("Password cannot exceed 128 characters");
@@ -125,17 +125,43 @@ export const password = (password: string):string => {
         case /(.)\1{2,}/.test(password):
             return ("Password cannot contain 3 or more identical characters in a row");
 
-        case /(123|234|345|456|567|678|789|890)/.test(password):
-            return ("Password cannot contain sequential numbers");
+        // case /(123|234|345|456|567|678|789|890)/.test(password):
+        //     return ("Password cannot contain sequential numbers");
 
-        case /(abc|bcd|cde|def|efg|fgh|ghi|hij|ijk|jkl|klm|lmn|mno|nop|opq|pqr|qrs|rst|stu|tuv|uvw|vwx|wxy|xyz)/i.test(password):
-            return ("Password cannot contain sequential letters");
+        // case /(abc|bcd|cde|def|efg|fgh|ghi|hij|ijk|jkl|klm|lmn|mno|nop|opq|pqr|qrs|rst|stu|tuv|uvw|vwx|wxy|xyz)/i.test(password):
+        //     return ("Password cannot contain sequential letters");
 
         case /password|123456|admin|qwerty/i.test(password):
             return ("Password is too common or weak");
 
         case new RegExp('^' + password.substring(0, 3), 'i').test(password.substring(3)):
             return ("Password contains repeating patterns");
+
+        default:
+            return '';
+    }
+}
+
+export const photoURL = (url: string): string => {
+    // Photo URL is optional, so empty string is valid
+    if (!url || url.trim() === '') {
+        return '';
+    }
+
+    const trimmedUrl = url.trim();
+
+    switch (true) {
+        case trimmedUrl.length > 2048:
+            return ("URL is too long");
+
+        case !/^https?:\/\/.+/i.test(trimmedUrl):
+            return ("URL must start with http:// or https://");
+
+        case !/\.(jpg|jpeg|png|gif|bmp|webp|svg)$/i.test(trimmedUrl):
+            return ("URL must point to a valid image file (jpg, jpeg, png, gif, bmp, webp, svg)");
+
+        case /\s/.test(trimmedUrl):
+            return ("URL cannot contain spaces");
 
         default:
             return '';
